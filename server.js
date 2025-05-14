@@ -4,10 +4,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.send("Todo App is running");
+app.get("/status", (req, res) => {
+    res.send("Todo App is running");
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
